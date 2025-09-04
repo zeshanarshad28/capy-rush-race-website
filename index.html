@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capy Rush Race: Draw Puzzle</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .hero-section {
+            background-image: linear-gradient(to right, #6b7280, #4b5563);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #1f2937;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="hero-section">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Capy Rush Race: Draw Puzzle</h1>
+        <p class="text-lg md:text-xl mb-6">Guide adorable capybaras through thrilling mazes in this exciting puzzle race!</p>
+        <a href="#download" class="bg-yellow-500 text-white font-semibold py-2 px-4 rounded hover:bg-yellow-600">Download Now</a>
+    </header>
+
+    <!-- Description Section -->
+    <section class="py-12 px-4 md:px-16">
+        <h2 class="text-3xl font-bold text-center mb-8">About the Game</h2>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center">
+            Get ready for an exciting <strong>Capy Rush Race: Draw Puzzle</strong> challenge! 🎮 Draw lines to guide your adorable capybaras 🦙 through exciting mazes as they race to the target. But be careful—if they collide, it’s game over! 😱
+            With each level, the challenge grows: more capybaras, tricky paths, and obstacles to avoid. 🚧 Can you solve the puzzle and lead them all to safety? 🏆 Sounds easy? Think again! As levels progress, the number of capybaras increases, and so do the obstacles, but paths become narrow. 🧩
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-100 py-12 px-4 md:px-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Game Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="feature-card bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-semibold mb-2">Challenging Mazes</h3>
+                <p class="text-gray-600">Navigate through increasingly complex mazes with narrow paths and tricky obstacles.</p>
+            </div>
+            <div class="feature-card bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-semibold mb-2">Adorable Capybaras</h3>
+                <p class="text-gray-600">Guide your cute capybaras to safety without letting them collide!</p>
+            </div>
+            <div class="feature-card bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-semibold mb-2">Progressive Difficulty</h3>
+                <p class="text-gray-600">Face tougher challenges as the number of capybaras and obstacles increases.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-12 px-4 md:px-16 text-center">
+        <h2 class="text-3xl font-bold mb-8">Get Capy Rush Race Now!</h2>
+        <p class="text-lg text-gray-700 mb-6">Available on iOS and Android. Download now and start racing!</p>
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.yourcompany.capy rushracedrawpuzzle" class="bg-green-600 text-white font-semibold py-2 px-4 rounded hover:bg-green-700">Google Play</a>
+            <!-- Replace the href above with your actual Google Play Store link, e.g., https://play.google.com/store/apps/details?id=com.yourcompany.capyrushracedrawpuzzle -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Capy Rush Race: Draw Puzzle. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
